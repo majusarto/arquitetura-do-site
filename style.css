@@ -1,0 +1,182 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.p {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p text {
+    text-align: right;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+header{
+    background-color: black;
+}
+
+.header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.texto_main{
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+.produtos{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* CSS FLEXBOX 1 */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 780px;
+    flex: 0 auto;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+/* CSS GRID 1 */
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 780px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.grid1 > div:nth-child(n + 1){
+    display: grid;
+    margin: 30px;
+    grid-template-columns: 1fr, 1 fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.anuncio {
+  grid-column: 2;
+  grid-row: 1/3;   
+}
+
+.anuncio img {
+    width: 500px; height: 500px;
+}
+
+    .div_flex_processador {
+        display: flex;
+        
+        justify-content:center;
+        align-items: center;
+    }
+
+    .div_flex_processador img 
+    {
+        width: 500px; height: 400px;
+        align-items: center;
+    }
+
+ .img {
+    width:180px ; height: 180px;
+ }
+ .foto {
+    width:50px; height:50px;
+ }
+ 
+ .barra{
+ background-color: orchid;
+    display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   margin: 4px;
+   align-items: center;
+   margin-bottom: 4px;
+ }
+ 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 9px;
+}
+
+    .texto {
+        max-width: 800px;
+        display: flex;
+        align-items: center;
+       flex-direction: column;
+    }
+
+        .alinhamento_texto {
+            display: flex;
+            justify-content: center;
+        }
+
+            .borda_p {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               border: solid black 4px;
+               padding: 20px;
+            }
+
+            .rodape {
+                background-color: black;
+                color: white;
+                margin-bottom: 0px;
+                padding: 70px;
+            }
